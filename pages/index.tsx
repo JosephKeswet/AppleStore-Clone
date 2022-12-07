@@ -3,7 +3,7 @@ import Card from '../components/Card'
 import SearchComponent from '../components/SearchComponent'
 import Sidebar from '../components/Sidebar'
 import SmallCard from '../components/SmallCard'
-import devicedata from '../data'
+import Devicedata from '../Data/Data'
 
 
 
@@ -29,7 +29,7 @@ export default function Home() {
               <SearchComponent/> 
             </section>  
             <section className='flex flex-wrap mb-4 justify-center'>
-            {devicedata.map((device,index:number) => (
+            {Devicedata?.map((device,index:number) => (
             <div className='mt-4 ' key={index}>
               <Card name={device.name} isBig={device.isBig} type={device.type} img={device.img} price={device.price}/>  
             </div>))}  
@@ -38,7 +38,7 @@ export default function Home() {
           <section className='hidden xl:flex flex-col pt-16 items-center w-[40rem] min-h-screen'>
             <h1 className='text-[#1A1F16] text-4xl leading-10 font-medium text-center'>Bag</h1>
             <main className='w-[25rem] mt-6 flex flex-wrap gap-5 justify-center items-center h-auto '>
-                {devicedata.map((device) => (
+                {Devicedata?.map((device) => (
                 <div className='mt-4' key={device.type}>
                   <SmallCard/>
                 </div>))}
