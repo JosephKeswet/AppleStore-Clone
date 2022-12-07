@@ -5,7 +5,7 @@ import AddToCart from '../Assets/icons/AddToCart.png'
 interface IProps {
   name:string,
   type:string,
-  img:string | StaticImageData
+  img:StaticImageData
   price:number,
   isBig?:boolean
 }

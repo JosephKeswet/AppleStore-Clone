@@ -1,17 +1,17 @@
-import AppleWatch from '../apple-clone/Assets/img/AppleWatch.png'
-import IPhone11Black from '../apple-clone/Assets/img/IPhone11_Black.png'
-import SonyHeadPhones from '../apple-clone/Assets/img/SonyHeadPhones.png'
-import IPhone11Milky from '../apple-clone/Assets/img/AppleWatch.png'
-import IPhone11Red from '../apple-clone/Assets/img/IPhone11_Red.png'
-import IPhone11Subway from '../apple-clone/Assets/img/IPhone11_Red.png'
-import Macbook from '../apple-clone/Assets/img/Macbook.png'
+import AppleWatch from '../Assets/img/AppleWatch.png'
+import IPhone11Black from '../Assets/img/IPhone11_Black.png'
+import SonyHeadPhones from '../Assets/img/SonyHeadPhones.png'
+import IPhone11Milky from '../Assets/img/AppleWatch.png'
+import IPhone11Red from '../Assets/img/IPhone11_Red.png'
+import IPhone11Subway from '../Assets/img/IPhone11_Red.png'
+import Macbook from '../Assets/img/Macbook.png'
 
 
 
 
 
 
-const devicesData = [
+const DevicesData = [
     {
         name:'Apple Watch',
         type:'Series 5 SE',
@@ -57,4 +57,4 @@ const devicesData = [
     },
 ]
 
-export default devicesData
+export default DevicesData
