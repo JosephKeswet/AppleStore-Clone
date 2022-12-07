@@ -1,9 +1,9 @@
 import AppleWatch from '../apple-clone/Assets/img/AppleWatch.png'
-import IPhone11_Black from '../apple-clone/Assets/img/IPhone11_Black.png'
+import IPhone11Black from '../apple-clone/Assets/img/IPhone11_Black.png'
 import SonyHeadPhones from '../apple-clone/Assets/img/SonyHeadPhones.png'
-import IPhone11_Milky from '../apple-clone/Assets/img/AppleWatch.png'
-import IPhone11_Red from '../apple-clone/Assets/img/IPhone11_Red.png'
-import IPhone11_Subway from '../apple-clone/Assets/img/IPhone11_Red.png'
+import IPhone11Milky from '../apple-clone/Assets/img/AppleWatch.png'
+import IPhone11Red from '../apple-clone/Assets/img/IPhone11_Red.png'
+import IPhone11Subway from '../apple-clone/Assets/img/IPhone11_Red.png'
 import Macbook from '../apple-clone/Assets/img/Macbook.png'
 
 
@@ -11,7 +11,7 @@ import Macbook from '../apple-clone/Assets/img/Macbook.png'
 
 
 
-export const devicesData = [
+const devicesData = [
     {
         name:'Apple Watch',
         type:'Series 5 SE',
@@ -28,13 +28,13 @@ export const devicesData = [
         name:'Iphone 11',
         type:'Serious Black',
         price:619.99,
-        img:IPhone11_Black
+        img:IPhone11Black
     },
     {
         name:'Iphone 11',
         type:'Subway Blue',
         price:619.99,
-        img:IPhone11_Subway
+        img:IPhone11Subway
     },
     {
         name:'Macbook Pro 16”',
@@ -47,13 +47,13 @@ export const devicesData = [
         name:'Iphone 11',
         type:'Product RED',
         price:619.99,
-        img:IPhone11_Red
+        img:IPhone11Red
     },
     {
         name:'Iphone 11',
         type:'Milky White',
         price:619.99,
-        img:IPhone11_Milky
+        img:IPhone11Milky
     },
 ]
 
