@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Card from '../components/Card'
 import SearchComponent from '../components/SearchComponent'
 import Sidebar from '../components/Sidebar'
@@ -8,8 +9,8 @@ import Devicedata from '../Data/Data'
 
 
 export default function Home() {
+  const router = useRouter();
 
-  
   return (
     <div>
       <Head>
@@ -30,9 +31,14 @@ export default function Home() {
             </section>  
             <section className='flex flex-wrap mb-4 justify-center'>
             {Devicedata?.map((device,index:number) => (
+            <div key={index} onDoubleClick={() =>{
+              router.push(`/${index}`)
+            }}>
             <div className='mt-4 ' key={index}>
-              <Card name={device.name} isBig={device.isBig} type={device.type} img={device.img} price={device.price}/>  
-            </div>))}  
+              <Card name={device.name} id={device.id} isBig={device.isBig} type={device.type} img={device.img} price={device.price}/>  
+            </div>
+            </div>
+            ))}  
             </section>     
           </div>
           <section className='hidden xl:flex flex-col pt-16 items-center w-[40rem] min-h-screen'>
@@ -41,7 +47,8 @@ export default function Home() {
                 {Devicedata?.map((device) => (
                 <div className='mt-4' key={device.type}>
                   <SmallCard/>
-                </div>))}
+                </div>
+                ))}
             </main>
           </section>
         </main>
